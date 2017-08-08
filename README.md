@@ -18,6 +18,12 @@ $ npm test
 # or npm run test
 ```
 
+To set up local server:
+
+```sh
+$ npm run start:fe:dev
+````
+
 ## Files
 
 Any file ending in `spec.js` anywhere within the source folder will be included in the running
