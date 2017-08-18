@@ -1,7 +1,6 @@
 # Test Framework
 
-An empty project with Tape to demonstrate proper unit test writing. Part of a recent Intro to
-JavaScript class I attended.
+A ToDo project with Tape to demonstrate proper unit test writing. Part of a recent JavaScript Master class I attended.
 
 ## Running
 
