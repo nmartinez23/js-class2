@@ -1,5 +1,27 @@
 import shortid from 'shortid';
 
+const TodoPrototype = {
+  getTitle () {
+    return this.title;
+  },
+
+  isComplete () {
+    return this.complete === true;
+  },
+
+  toggleComplete () {
+    this.complete = ! this.complete;
+  },
+
+  setTitle ( title ) {
+    this.title = title;
+  },
+
+  getId () {
+    return this.id;
+  },
+};
+
 function Todo ( todo ) {
   if ( ! this ) {
     // What the 'new' keyword is doing:
@@ -14,5 +36,7 @@ function Todo ( todo ) {
     this.complete = false;
   }
 };
+
+Todo.prototype = TodoPrototype;
 
 export default Todo;
