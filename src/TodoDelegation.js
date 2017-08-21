@@ -34,6 +34,10 @@ function Todo ( todo ) {
     this.id = shortid.generate();
     this.title = todo;
     this.complete = false;
+  } else {
+    this.id = todo.id;
+    this.title = todo.title;
+    this.complete = todo.complete;
   }
 };
 
