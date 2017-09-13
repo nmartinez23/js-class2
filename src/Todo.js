@@ -27,7 +27,7 @@ const TodoPrototype = {
 
 export default todo => {
   if ( typeof todo !== 'object' ) {
-    return {
+    todo = {
       id: shortid.generate(),
       title: todo,
       compose: false,
